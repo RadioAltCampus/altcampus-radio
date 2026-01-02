@@ -8,46 +8,99 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      background: linear-gradient(135deg, #020617, #0f172a);
+      min-height: 100vh;
       font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: radial-gradient(circle at top, #1e1b4b, #020617);
       color: #ffffff;
+      display: flex;
+      justify-content: center;
     }
 
-    .radio {
-      text-align: center;
-      background: rgba(2, 6, 23, 0.9);
-      padding: 32px;
-      border-radius: 14px;
+    .container {
       width: 100%;
-      max-width: 420px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.7);
+      max-width: 480px;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 220px;
+      margin-bottom: 12px;
     }
 
     h1 {
-      margin: 0;
+      margin: 12px 0 4px;
       font-size: 2.2rem;
     }
 
-    p {
-      margin: 8px 0 24px;
+    .slogan {
       color: #c7d2fe;
+      margin-bottom: 28px;
       font-size: 1rem;
+    }
+
+    .card {
+      background: rgba(2, 6, 23, 0.85);
+      border-radius: 16px;
+      padding: 28px 20px;
+      margin-bottom: 28px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+
+    .ads {
+      border: 2px dashed rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 28px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-top: 16px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="radio">
-    <h1>AltCampus</h1>
-    <p>Rádio universitária online</p>
+  <div class="container">
 
-    <!-- PLAYER DA RÁDIO -->
-    <script src="//myradiostream.com/embed/RadioAltCampus"></script>
+    <!-- LOGO -->
+    <img src="logo.png" alt="AltCampus Rádio" class="logo">
+
+    <h1>AltCampus</h1>
+    <div class="slogan">Trilha sonora da vida acadêmica</div>
+
+    <!-- PLAYER -->
+    <div class="card">
+      <script src="//myradiostream.com/embed/RadioAltCampus"></script>
+    </div>
+
+    <!-- PUBLICIDADE 1 -->
+    <div class="ads">
+      Espaço para publicidade<br>
+      (Apoiadores / Parceiros)
+    </div>
+
+    <!-- SOBRE -->
+    <div class="card">
+      <strong>Sobre a AltCampus</strong><br><br>
+      Uma rádio universitária online criada para acompanhar estudos,
+      pesquisas, debates e a rotina acadêmica com música e conteúdo.
+    </div>
+
+    <!-- PUBLICIDADE 2 -->
+    <div class="ads">
+      Seu anúncio pode estar aqui
+    </div>
+
+    <footer>
+      © AltCampus Rádio • Projeto universitário
+    </footer>
+
   </div>
 
 </body>
