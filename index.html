@@ -10,6 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
@@ -18,31 +22,32 @@
       color: #ffffff;
       display: flex;
       justify-content: center;
+      align-items: center;
     }
-
 
     .container {
       width: 100%;
-      max-width: 480px;
+      max-width: 520px;
       padding: 32px 20px;
       text-align: center;
     }
 
-    ..logo {
-  max-width: 300px;
-  margin-bottom: 12px;
-  filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.45));
-
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 16px;
+      display: block;
+      filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.45));
     }
 
     h1 {
-      margin: 12px 0 4px;
+      margin: 8px 0 6px;
       font-size: 2.2rem;
     }
 
     .slogan {
       color: #c7d2fe;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
       font-size: 1rem;
     }
 
@@ -66,7 +71,31 @@
     footer {
       font-size: 0.8rem;
       color: #94a3b8;
-      margin-top: 16px;
+      margin-top: 24px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 16px;
+      }
+
+      .logo {
+        max-width: 220px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .card {
+        padding: 24px 16px;
+      }
+
+      .ads {
+        font-size: 0.85rem;
+        padding: 14px;
+      }
     }
   </style>
 </head>
@@ -86,7 +115,7 @@
       <script src="//myradiostream.com/embed/RadioAltCampus"></script>
     </div>
 
-    <!-- PUBLICIDADE 1 -->
+    <!-- PUBLICIDADE -->
     <div class="ads">
       Espaço para publicidade<br>
       (Apoiadores / Parceiros)
@@ -99,7 +128,7 @@
       pesquisas, debates e a rotina acadêmica com música e conteúdo.
     </div>
 
-    <!-- PUBLICIDADE 2 -->
+    <!-- PUBLICIDADE -->
     <div class="ads">
       Seu anúncio pode estar aqui
     </div>
@@ -107,30 +136,6 @@
     <footer>
       © AltCampus Rádio • Projeto universitário
     </footer>
-
-    /* MOBILE FIRST */
-@media (max-width: 600px) {
-
-  .logo {
-    max-width: 220px;
-    margin-bottom: 16px;
-  }
-
-  .container {
-    padding: 24px 16px;
-  }
-
-  .card {
-    padding: 24px 16px;
-  }
-
-  .ads {
-    font-size: 0.85rem;
-    padding: 14px;
-  }
-
-}
-
 
   </div>
 
