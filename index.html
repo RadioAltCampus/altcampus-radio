@@ -3,9 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>AltCampus Rádio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    .radio {
+      text-align: center;
+      background: rgba(2, 6, 23, 0.9);
+      padding: 32px;
+      border-radius: 14px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    p {
+      margin: 8px 0 24px;
+      color: #c7d2fe;
+      font-size: 1rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>AltCampus</h1>
-  <p>Rádio universitária online</p>
+
+  <div class="radio">
+    <h1>AltCampus</h1>
+    <p>Rádio universitária online</p>
+
+    <!-- PLAYER DA RÁDIO -->
+    <script src="//myradiostream.com/embed/RadioAltCampus"></script>
+  </div>
+
 </body>
 </html>
