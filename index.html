@@ -28,9 +28,11 @@
       text-align: center;
     }
 
-    .logo {
-      max-width: 220px;
-      margin-bottom: 12px;
+    ..logo {
+  max-width: 300px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.45));
+
     }
 
     h1 {
@@ -105,6 +107,30 @@
     <footer>
       © AltCampus Rádio • Projeto universitário
     </footer>
+
+    /* MOBILE FIRST */
+@media (max-width: 600px) {
+
+  .logo {
+    max-width: 220px;
+    margin-bottom: 16px;
+  }
+
+  .container {
+    padding: 24px 16px;
+  }
+
+  .card {
+    padding: 24px 16px;
+  }
+
+  .ads {
+    font-size: 0.85rem;
+    padding: 14px;
+  }
+
+}
+
 
   </div>
 
